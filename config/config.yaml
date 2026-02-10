@@ -32,16 +32,18 @@ app:
 platforms:
   enabled: true                         # 是否启用热榜平台抓取
   sources:
-    - id: "bloomberg"
+    - id: "bloomberg/news"
       name: "彭博社"
-    - id: "reuters"
+    - id: "reuters/world/us"
       name: "路透社"
-    - id: "ft"
+    - id: "ft/world"
       name: "金融时报"
-    - id: "wsj"
+    - id: "wsj/en-us"
       name: "华尔街日报"
     - id: "economist"
       name: "经济学人"
+    - id: "googletrends"
+      name: "谷歌趋势"
     - id: "toutiao"
       name: "今日头条"
     # - id: "baidu"
@@ -103,12 +105,12 @@ rss:
     - id: "hacker-news"
       name: "Hacker News"
       url: "https://hnrss.org/frontpage"
-      # max_age_days: 1               # 示例：只推送1天内的文章
+      max_age_days: 1               # 示例：只推送1天内的文章
 
-    - id: "ruanyifeng"
-      name: "阮一峰的网络日志"
-      url: "http://www.ruanyifeng.com/blog/atom.xml"
-      # max_age_days: 7               # 示例：推送7天内的文章（更新较慢的博客）
+    # - id: "ruanyifeng"
+    #   name: "阮一峰的网络日志"
+    #   url: "http://www.ruanyifeng.com/blog/atom.xml"
+    #   max_age_days: 7               # 示例：推送7天内的文章（更新较慢的博客）
     
     - id: "yahoo-finance"
       name: "雅虎财经"
