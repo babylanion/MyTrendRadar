@@ -32,10 +32,20 @@ app:
 platforms:
   enabled: true                         # 是否启用热榜平台抓取
   sources:
+    - id: "bloomberg"
+      name: "彭博社"
+    - id: "reuters"
+      name: "路透社"
+    - id: "ft"
+      name: "金融时报"
+    - id: "wsj"
+      name: "华尔街日报"
+    - id: "economist"
+      name: "经济学人"
     - id: "toutiao"
       name: "今日头条"
-    - id: "baidu"
-      name: "百度热搜"
+    # - id: "baidu"
+    #   name: "百度热搜"
     - id: "wallstreetcn-hot"
       name: "华尔街见闻"
     - id: "thepaper"
@@ -46,14 +56,14 @@ platforms:
       name: "财联社热门"
     - id: "ifeng"
       name: "凤凰网"
-    - id: "tieba"
-      name: "贴吧"
-    - id: "weibo"
-      name: "微博"
-    - id: "douyin"
-      name: "抖音"
-    - id: "zhihu"
-      name: "知乎"
+    # - id: "tieba"
+    #   name: "贴吧"
+    # - id: "weibo"
+    #   name: "微博"
+    # - id: "douyin"
+    #   name: "抖音"
+    # - id: "zhihu"
+    #   name: "知乎"
 
 
 
@@ -343,7 +353,7 @@ ai:
   
   model: "deepseek/deepseek-chat"
 
-  api_key: ""                       # API Key（建议使用环境变量 AI_API_KEY）
+  api_key: "sk-ba0355ca56cf420184faec3bca3503fd"                       # API Key（建议使用环境变量 AI_API_KEY）
   
   api_base: ""                      # 自定义 API 端点（可选，大多数情况留空）
                                     # 示例: https://api.openai.com/v1（自建代理或兼容接口）
