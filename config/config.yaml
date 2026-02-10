@@ -34,8 +34,8 @@ platforms:
   sources:
     - id: "36kr"        # 36氪 (支持)
       name: "36氪"
-    - id: "huxiu"       # 虎嗅 (支持)
-      name: "虎嗅"
+    # - id: "huxiu"       # 虎嗅 (支持)
+    #   name: "虎嗅"
     - id: "thepaper"    # 澎湃新闻 (支持)
       name: "澎湃新闻"
     - id: "cls-hot"
